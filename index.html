@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>STRING ARRAY</title>
+</head>
+
+<body class="bg-linear-to-r from-yellow-100 to-amber-50 min-h-screen p-2 sm:p-4">
+
+  <header class="border-4 border-dashed border-amber-500 bg-linear-to-r from-yellow-600 to-amber-200 rounded-3xl mt-2 mb-10 mx-auto w-full max-w-5xl 2xl:max-w-7xl p-6 lg:border-8 lg:p-10">
+    <h1 class="text-center text-2xl lg:text-4xl 2xl:text-5xl text-amber-950 font-bold [text-shadow:2px_2px_0px_rgba(251,146,60,0.5),_4px_4px_8px_rgba(120,53,15,0.4)]">
+      STRING ARRAY
+    </h1>
+  </header>
+
+  <main class="max-w-5xl 2xl:max-w-7xl mx-auto">
+
+    <details open class="mb-10 p-4 rounded-xl border border-amber-200">
+      <summary class="cursor-pointer bg-linear-to-r from-yellow-400 to-amber-300 rounded-2xl p-2 text-white font-bold mb-2 shadow-md hover:from-yellow-500 hover:to-amber-400 transition-all">
+        String array
+      </summary>
+      <p class="px-2 text-amber-900">Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']</p>
+    </details>
+
+    <section class="flex flex-col lg:flex-row items-center justify-center gap-10">
+      
+      <section class="w-full lg:w-1/2 border-yellow-700 bg-linear-to-r from-yellow-600 to-amber-200 border rounded-2xl p-6 flex flex-col items-center">
+        
+        <h2 class="text-center text-amber-950 font-bold text-2xl bg-linear-to-r from-yellow-500 to-amber-100 border border-yellow-700 rounded-2xl w-full max-w-xs mb-8 py-2 shadow-md">
+          Cadena de texto
+        </h2> 
+
+        <div class="w-full max-w-sm flex flex-col items-center gap-4">
+          <label class="text-amber-950 font-bold self-start">Introduce un texto:</label>
+          
+          <input 
+            class="text-amber-900 w-full px-4 py-2 border-2 border-yellow-700 rounded-3xl bg-linear-to-r from-yellow-100 to-amber-50 focus:outline-orange-500 text-center font-bold" 
+            type="text" 
+            id="texto"
+          />
+
+          <button 
+            class="border-amber-300 border-2 rounded-2xl w-full max-w-[150px] py-2 mt-4 bg-linear-to-r from-amber-500 to-yellow-100 text-amber-950 font-bold transition-all duration-300 ease-out 
+                   hover:scale-105 hover:text-white hover:bg-orange-600 hover:shadow-[0_0_30px_10px_rgba(245,158,11,0.8)] 
+                   active:scale-95 active:shadow-[0_0_40px_15px_rgba(245,158,11,1)] active:bg-orange-800
+                   cursor-pointer" 
+            id="calcular" 
+            type="button">
+            MOSTRAR
+          </button>
+
+          <p class="w-full min-h-[50px] mt-8 px-4 py-3 rounded-2xl border border-yellow-700 bg-linear-to-r from-yellow-100 to-amber-50 text-center text-amber-900 font-bold break-words" id="resultado"></p>
+        </div>
+      </section>
+      
+      <div class="w-full lg:w-1/2 flex justify-center p-4">
+        <img src="imagenes/texto.png" alt="Icono de texto" class="max-w-[200px] lg:max-w-sm w-full h-auto object-contain" />
+      </div>
+    </section> 
+  </main>
+
+  <script src="js/string.js"></script>
+</body>
+</html>
